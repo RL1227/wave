@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電子レンジ加熱時間計算機</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>電子レンジ加熱時間計算機</h1>
+        <form id="timeForm">
+            <label for="minutes">加熱時間:</label>
+            <div>
+                <input type="number" id="minutes" placeholder="分" required>
+                <input type="number" id="seconds" placeholder="秒" required>
+            </div>
+            <label for="power">出力 (W):</label>
+            <select id="power">
+                <option value="500">500W</option>
+                <option value="600">600W</option>
+                <option value="700">700W</option>
+            </select>
+            <button type="submit">計算</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
